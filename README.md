@@ -1,1 +1,1 @@
-The Dotflies for my Personal arch linux rig with BSPWM
+The Dotflies for my Personal Archlinux rig with BSPWM

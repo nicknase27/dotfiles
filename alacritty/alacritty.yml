@@ -1,0 +1,22 @@
+window:
+  opacity: 0.8
+
+font:
+  normal:
+    family: FiraCode 
+    style: Regular
+
+  bold:
+    family: FiraCode
+    style: Bold
+  
+  italic:
+    family: FiraCode
+    style: italic
+
+  bold_italic:
+    family: FiraCode
+    style: Bold Italic
+
+    size: 20 
+

@@ -1,0 +1,33 @@
+#! /bin/sh
+
+e
+
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+bash ~/.screenlayout/monitor.sh &
+bash ~/.config/polybar/blocks/launch.sh &
+picom --config ~/.config/picom/picom.conf &
+dunst &
+nitrogen --restore &
+
+bspc monitor DP-0 -d 1 4 6 8
+bspc monitor HDMI-0 -d 2
+bspc monitor DVI-D-0 -d 3 5 7 9
+
+bspc config border_width         2
+bspc config window_gap          15
+bspc config focused_border_color \#81a1c1
+bspc config normal_border_color \#3b4252
+
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a PolyMC state=floating
+bspc rule -a mpv desktop='^3'state=floating

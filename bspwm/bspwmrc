@@ -1,8 +1,5 @@
 #! /bin/sh
 
-e
-
-
 pgrep -x sxhkd > /dev/null || sxhkd &
 bash ~/.screenlayout/monitor.sh &
 bash ~/.config/polybar/blocks/launch.sh &

@@ -30,4 +30,5 @@ dunst &
 sh ~/.monitors.sh &
 easyeffects --gapplication-service &
 variety &
+xsetroot -cursor_name left_ptr &
 xinput set-prop "12" "libinput Accel Profile Enabled" 0 1 0
